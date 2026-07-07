@@ -1,0 +1,54 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package common;
+
+import java.io.Serializable;
+
+public class FilePacket implements Serializable {
+   private static final long serialVersionUID = 1L;
+   private String fileName;
+   private long fileSize;
+   private String fileType;
+   private byte[] data;
+
+   public FilePacket() {
+   }
+
+   public FilePacket(String var1, long var2, String var4, byte[] var5) {
+      this.fileName = var1;
+      this.fileSize = var2;
+      this.fileType = var4;
+      this.data = var5;
+   }
+
+   public String getFileName() {
+      return this.fileName;
+   }
+
+   public void setFileName(String var1) {
+      this.fileName = var1;
+   }
+
+   public long getFileSize() {
+      return this.fileSize;
+   }
+
+   public void setFileSize(long var1) {
+      this.fileSize = var1;
+   }
+
+   public String getFileType() {
+      return this.fileType;
+   }
+
+   public void setFileType(String var1) {
+      this.fileType = var1;
+   }
+
+   public byte[] getData() {
+      return this.data;
+   }
+
+   public void setData(byte[] var1) {
+      this.data = var1;
+   }
+}
