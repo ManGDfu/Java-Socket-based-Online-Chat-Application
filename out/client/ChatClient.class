@@ -1,0 +1,24 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package client;
+
+import client.ui.LoginFrame;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+
+public class ChatClient {
+   public ChatClient() {
+   }
+
+   public static void main(String[] var0) {
+      try {
+         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+      } catch (Exception var2) {
+      }
+
+      SwingUtilities.invokeLater(new Runnable() {
+         public void run() {
+            (new LoginFrame()).setVisible(true);
+         }
+      });
+   }
+}
